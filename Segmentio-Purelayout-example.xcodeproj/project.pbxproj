@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5ACBB4607092656D8CE64448 /* Pods_Segmentio_Purelayout_example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53E6A25796C9251D6E641652 /* Pods_Segmentio_Purelayout_example.framework */; };
 		BBC10B2F1DA6A26000050ECE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBC10B2E1DA6A26000050ECE /* AppDelegate.swift */; };
 		BBC10B311DA6A26000050ECE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBC10B301DA6A26000050ECE /* ViewController.swift */; };
 		BBC10B341DA6A26000050ECE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BBC10B321DA6A26000050ECE /* Main.storyboard */; };
@@ -15,6 +16,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		53E6A25796C9251D6E641652 /* Pods_Segmentio_Purelayout_example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Segmentio_Purelayout_example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8D94B2CD4AED4A8F299F1EAE /* Pods-Segmentio-Purelayout-example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Segmentio-Purelayout-example.release.xcconfig"; path = "Pods/Target Support Files/Pods-Segmentio-Purelayout-example/Pods-Segmentio-Purelayout-example.release.xcconfig"; sourceTree = "<group>"; };
+		9D94A2E21D723A5D19AC30F9 /* Pods-Segmentio-Purelayout-example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Segmentio-Purelayout-example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Segmentio-Purelayout-example/Pods-Segmentio-Purelayout-example.debug.xcconfig"; sourceTree = "<group>"; };
 		BBC10B2B1DA6A26000050ECE /* Segmentio-Purelayout-example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Segmentio-Purelayout-example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BBC10B2E1DA6A26000050ECE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BBC10B301DA6A26000050ECE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -29,17 +33,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5ACBB4607092656D8CE64448 /* Pods_Segmentio_Purelayout_example.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		52337D6B3827D4B6F2194C6B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9D94A2E21D723A5D19AC30F9 /* Pods-Segmentio-Purelayout-example.debug.xcconfig */,
+				8D94B2CD4AED4A8F299F1EAE /* Pods-Segmentio-Purelayout-example.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		BBC10B221DA6A26000050ECE = {
 			isa = PBXGroup;
 			children = (
 				BBC10B2D1DA6A26000050ECE /* Segmentio-Purelayout-example */,
 				BBC10B2C1DA6A26000050ECE /* Products */,
+				52337D6B3827D4B6F2194C6B /* Pods */,
+				D7E2B530047C95F57A441659 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +80,14 @@
 			path = "Segmentio-Purelayout-example";
 			sourceTree = "<group>";
 		};
+		D7E2B530047C95F57A441659 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				53E6A25796C9251D6E641652 /* Pods_Segmentio_Purelayout_example.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +95,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BBC10B3D1DA6A26000050ECE /* Build configuration list for PBXNativeTarget "Segmentio-Purelayout-example" */;
 			buildPhases = (
+				4546B69AF082B90D7B86D1FE /* [CP] Check Pods Manifest.lock */,
 				BBC10B271DA6A26000050ECE /* Sources */,
 				BBC10B281DA6A26000050ECE /* Frameworks */,
 				BBC10B291DA6A26000050ECE /* Resources */,
+				762137AC13DEFE93DC0B749C /* [CP] Embed Pods Frameworks */,
+				6CAEF03F2926040E53172F0C /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -131,6 +158,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4546B69AF082B90D7B86D1FE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		6CAEF03F2926040E53172F0C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Segmentio-Purelayout-example/Pods-Segmentio-Purelayout-example-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		762137AC13DEFE93DC0B749C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Segmentio-Purelayout-example/Pods-Segmentio-Purelayout-example-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		BBC10B271DA6A26000050ECE /* Sources */ = {
@@ -259,6 +334,7 @@
 		};
 		BBC10B3E1DA6A26000050ECE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9D94A2E21D723A5D19AC30F9 /* Pods-Segmentio-Purelayout-example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = U7XY9CE3YC;
@@ -272,6 +348,7 @@
 		};
 		BBC10B3F1DA6A26000050ECE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8D94B2CD4AED4A8F299F1EAE /* Pods-Segmentio-Purelayout-example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = U7XY9CE3YC;
@@ -302,6 +379,7 @@
 				BBC10B3F1DA6A26000050ECE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

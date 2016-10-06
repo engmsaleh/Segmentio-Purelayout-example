@@ -1,0 +1,15 @@
+PODS:
+  - PureLayout (3.0.2)
+  - Segmentio (1.1.3)
+
+DEPENDENCIES:
+  - PureLayout
+  - Segmentio
+
+SPEC CHECKSUMS:
+  PureLayout: 4d550abe49a94f24c2808b9b95db9131685fe4cd
+  Segmentio: dfc66afe867c746147f3f958f8e8c760b71c1165
+
+PODFILE CHECKSUM: f55d75a2e48dc225605c46de638e4d69fcd8cf41
+
+COCOAPODS: 1.1.0.rc.2
