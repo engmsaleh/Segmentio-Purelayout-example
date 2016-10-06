@@ -10,7 +10,6 @@
 		5ACBB4607092656D8CE64448 /* Pods_Segmentio_Purelayout_example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53E6A25796C9251D6E641652 /* Pods_Segmentio_Purelayout_example.framework */; };
 		BBC10B2F1DA6A26000050ECE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBC10B2E1DA6A26000050ECE /* AppDelegate.swift */; };
 		BBC10B311DA6A26000050ECE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBC10B301DA6A26000050ECE /* ViewController.swift */; };
-		BBC10B341DA6A26000050ECE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BBC10B321DA6A26000050ECE /* Main.storyboard */; };
 		BBC10B361DA6A26000050ECE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BBC10B351DA6A26000050ECE /* Assets.xcassets */; };
 		BBC10B391DA6A26000050ECE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BBC10B371DA6A26000050ECE /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
@@ -22,7 +21,6 @@
 		BBC10B2B1DA6A26000050ECE /* Segmentio-Purelayout-example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Segmentio-Purelayout-example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BBC10B2E1DA6A26000050ECE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BBC10B301DA6A26000050ECE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		BBC10B331DA6A26000050ECE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BBC10B351DA6A26000050ECE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BBC10B381DA6A26000050ECE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BBC10B3A1DA6A26000050ECE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -72,7 +70,6 @@
 			children = (
 				BBC10B2E1DA6A26000050ECE /* AppDelegate.swift */,
 				BBC10B301DA6A26000050ECE /* ViewController.swift */,
-				BBC10B321DA6A26000050ECE /* Main.storyboard */,
 				BBC10B351DA6A26000050ECE /* Assets.xcassets */,
 				BBC10B371DA6A26000050ECE /* LaunchScreen.storyboard */,
 				BBC10B3A1DA6A26000050ECE /* Info.plist */,
@@ -153,7 +150,6 @@
 			files = (
 				BBC10B391DA6A26000050ECE /* LaunchScreen.storyboard in Resources */,
 				BBC10B361DA6A26000050ECE /* Assets.xcassets in Resources */,
-				BBC10B341DA6A26000050ECE /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -220,14 +216,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		BBC10B321DA6A26000050ECE /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				BBC10B331DA6A26000050ECE /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		BBC10B371DA6A26000050ECE /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -342,7 +330,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.ventaapps.Segmentio-Purelayout-example";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 2.3;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -356,7 +345,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.ventaapps.Segmentio-Purelayout-example";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 2.3;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
