@@ -12,6 +12,8 @@
 		BBC10B311DA6A26000050ECE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBC10B301DA6A26000050ECE /* ViewController.swift */; };
 		BBC10B361DA6A26000050ECE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BBC10B351DA6A26000050ECE /* Assets.xcassets */; };
 		BBC10B391DA6A26000050ECE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BBC10B371DA6A26000050ECE /* LaunchScreen.storyboard */; };
+		BBC10B421DA6B2A500050ECE /* ColorPalette.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBC10B401DA6B2A400050ECE /* ColorPalette.swift */; };
+		BBC10B431DA6B2A500050ECE /* UIFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBC10B411DA6B2A500050ECE /* UIFont.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		BBC10B351DA6A26000050ECE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BBC10B381DA6A26000050ECE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BBC10B3A1DA6A26000050ECE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BBC10B401DA6B2A400050ECE /* ColorPalette.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorPalette.swift; sourceTree = "<group>"; };
+		BBC10B411DA6B2A500050ECE /* UIFont.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIFont.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +74,8 @@
 			children = (
 				BBC10B2E1DA6A26000050ECE /* AppDelegate.swift */,
 				BBC10B301DA6A26000050ECE /* ViewController.swift */,
+				BBC10B401DA6B2A400050ECE /* ColorPalette.swift */,
+				BBC10B411DA6B2A500050ECE /* UIFont.swift */,
 				BBC10B351DA6A26000050ECE /* Assets.xcassets */,
 				BBC10B371DA6A26000050ECE /* LaunchScreen.storyboard */,
 				BBC10B3A1DA6A26000050ECE /* Info.plist */,
@@ -208,8 +214,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BBC10B431DA6B2A500050ECE /* UIFont.swift in Sources */,
 				BBC10B311DA6A26000050ECE /* ViewController.swift in Sources */,
 				BBC10B2F1DA6A26000050ECE /* AppDelegate.swift in Sources */,
+				BBC10B421DA6B2A500050ECE /* ColorPalette.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -327,6 +335,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = U7XY9CE3YC;
 				INFOPLIST_FILE = "Segmentio-Purelayout-example/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.ventaapps.Segmentio-Purelayout-example";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -342,6 +351,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = U7XY9CE3YC;
 				INFOPLIST_FILE = "Segmentio-Purelayout-example/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.ventaapps.Segmentio-Purelayout-example";
 				PRODUCT_NAME = "$(TARGET_NAME)";

@@ -4,7 +4,9 @@ target 'Segmentio-Purelayout-example' do
   use_frameworks!
   pod 'PureLayout'
   pod 'Segmentio'
-  
+  pod 'ChameleonFramework/Swift'
+  pod 'Reveal-iOS-SDK', :configurations => ['Debug']
+
   post_install do |installer|
       installer.pods_project.build_configurations.each do |config|
           # Configure Pod targets for Xcode 8 compatibility
